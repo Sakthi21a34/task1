@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+    <style>
+        
+.progress-bar-container {
+  display: flex;
+  flex-direction: row;
+  height: 200px; /* adjust height to desired length */
+  align-items: center;
+  padding: 20px;
+}
+
+.pr {
+  width: 20px;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.a {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.c{
+    background-color: rgb(245, 242, 242);
+    border-radius: 20px;
+    padding: none;
+    margin: none;
+
+}
+        .km {
+            text-align: center;
+        }
+        .br {
+            height: 20px;
+            background-color: lightblue;
+        }
+       
+        .sidebar {
+            background-color: blueviolet;
+            color: white;
+            height: 150vh;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+           
+        }
+        .button-green {
+            background-color: green;
+            color: white;
+            border: none;
+            margin-left: 67px;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100px;
+            cursor: pointer;
+        }
+        .line {
+            border-width: 50px;
+            border-top-style: dashed;
+        }
+       .fa-lg{
+        padding-left: 15px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8">
+                <div class="row mb-3">
+                    <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+                    <div class="col-6"><b>Start.</b></div>
+                    <div class="col-1"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="col-1"><i class="fa-solid fa-user"></i></div>
+                    <div class="col-2"><i class="fa-solid fa-3"></i></div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-5">
+                        <div class="card km" style="padding: 48px;">
+                            <div></div>
+                            <div></div>
+                            <div><h5><b>Kickstart</b></h5></div>
+                            <h5 style="padding-bottom: 10px;"><b >Mobile Application</b></h5>
+                            <button class="button-green" style="margin-bottom: 25px;">Create App</button>
+                            <img src="logo.jpg" alt="img" width="100%" height="100px">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="card">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div><b>Campaign Leaders</b></div>
+                                    <small>890,344 Sales</small>
+                                </div>
+                                <p class="col-2 text-center c">Day</p>
+                                <div class="col-2 text-center ab">Week</div>
+                                <div class="col-2 text-center ab">Month</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-1"><i class="fa-solid fa-message" ></i></div>
+                                <div class="col-5">
+                                    <div>Top Authors</div>
+                                    <small>HTML/CSS/JS, Python</small>
+                                </div>
+                                <div class="col-4">
+                                    <div>Progress</div>
+                                    <div class="progress">
+                                        <div class="progress-bar br" style="width: 46%;">46%</div>
+                                    </div>
+                                </div>
+                                <div class="col-2"><i class="fa-solid fa-circle-chevron-right fa-lg"></i></div>
+                            </div>
+                            <div class="row mb-2">
+                            <div class="col-1"><i class="fa-solid fa-message" ></i></div>
+                                <div class="col-5">
+                                    <div>Top Authors</div>
+                                    <small>HTML/CSS/JS, Python</small>
+                                </div>
+                                <div class="col-4">
+                                    <div>Progress</div>
+                                    <div class="progress">
+                                        <div class="progress-bar br" style="width: 87%;">87%</div>
+                                    </div>
+                                </div>
+                                <div class="col-2"><i class="fa-solid fa-circle-chevron-right fa-lg"></i></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-1"><i class="fa-solid fa-message" ></i></div>
+                                <div class="col-5">
+                                    <div>Top Authors</div>
+                                    <small>HTML/CSS/JS, Python</small>
+                                </div>
+                                <div class="col-4">
+                                    <div>Progress</div>
+                                    <div class="progress">
+                                        <div class="progress-bar br" style="width: 53%; ">53%</div>
+                                    </div>
+                                </div>
+                                <div class="col-2"><i class="fa-solid fa-circle-chevron-right fa-lg"></i></div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-1"><i class="fa-solid fa-message" ></i></div>
+                                <div class="col-5">
+                                    <div>Top Authors</div>
+                                    <small>HTML/CSS/JS, Python</small>
+                                </div>
+                                <div class="col-4">
+                                    <div>Progress</div>
+                                    <div class="progress">
+                                        <div class="progress-bar br" style="width: 92%;">92%</div>
+                                    </div>
+                                </div>
+                                <div class="col-2"><i class="fa-solid fa-circle-chevron-right fa-lg"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-5">
+                        <div class="card">
+                            <div><b>Timeline</b></div>
+                            <small style="padding-bottom: 20px;">890,344 Sales</small>
+                            <div class="row mb-2">
+                                <div class="col-3"><b>08:42</b></div>
+                                <div class="col-1">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-8">
+                                    <small>Outlines keep you indulging in poorly driving</small>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3"><b>08:42</b></div>
+                                <div class="col-1">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-8">
+                                    <small>Outlines keep you indulging in poorly driving</small>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3"><b>08:42</b></div>
+                                <div class="col-1">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-8">
+                                    <small>Outlines keep you indulging in poorly driving</small>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3"><b>08:42</b></div>
+                                <div class="col-1">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-8">
+                                    <small>Outlines keep you indulging in poorly driving</small>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3"><b>08:42</b></div>
+                                <div class="col-1">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-8">
+                                    <small>Outlines keep you indulging in poorly driving</small>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-3"><b>08:42</b></div>
+                                <div class="col-1">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="col-8">
+                                    <small>Outlines keep you indulging in poorly driving</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="card">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div><b>Milestones</b></div>
+                                    <small>890,344 Sales</small>
+                                </div>
+                                <div class="col-2">
+                                    <small>Sales</small>
+                                    <b>$650</b>
+                                </div>
+                                <div class="col-2">
+                                    <small>Sales</small>
+                                    <b>$650</b>
+                                </div>
+                                <div class="col-2">
+                                    <small>Sales</small>
+                                    <b>$650</b>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+
+                                    <div class="row" style="background-color: #eeeded; border-radius: 20px; margin-bottom: 30px; margin-top: 25px;">
+                                        <div class="col-2" style="margin:none;"><img src="flower.jpg" style="width: 45px; height: 45px;">
+                                            
+                                        </div>
+                                        <div class="col-10" >
+                                            <b>Man&Flower</b><div><small>HR Solutions</small></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="margin-bottom: 30px;">
+                                        <div class="col-2" style="margin:none;"><img src="building.jpg" style="width: 45px; height: 45px;">
+                                            
+                                        </div>
+                                        <div class="col-10">
+                                            <b>Building Studio</b><div><small>HR Solutions</small></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="margin-bottom: 30px;">
+                                        <div class="col-2" style="margin:none;"><img src="fox.jpg" style="width: 45px; height: 45px;">
+                                            
+                                        </div>
+                                        <div class="col-10">
+                                            <b>Foxy Solutions</b><div><small>HR Solutions</small></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="margin-bottom: 30px;">
+                                        <div class="col-2" style="margin:none;"><img src="mystreams.jpg" style="width: 45px; height: 45px;">
+                                            
+                                        </div>
+                                        <div class="col-10">
+                                            <b>MyStreams</b><div><small>HR Solutions</small></div>
+                                        </div>
+                                    </div>
+
+                                    
+            
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-12" style="color: white; margin-bottom: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem obcaecati dolore.</div>
+                                        <div class="row">
+                                            
+                                        <div class="progress-bar-container">
+            
+                                            <div class="progress-bar pr" id="bar1">
+                                                <div class="progress a" style="height: 30%"></div>
+                                            </div>
+                                            <div class="progress-bar pr" id="bar2">
+                                                <div class="progress a" style="height: 60%"></div>
+                                            </div>
+                                            <div class="progress-bar pr" id="bar3">
+                                                <div class="progress a" style="height: 40%"></div>
+                                            </div>
+                                            <div class="progress-bar pr" id="bar4">
+                                                <div class="progress a" style="height: 90%; background-color: green;"></div>
+                                            </div>
+                                            <div class="progress-bar pr" id="bar3">
+                                                <div class="progress a" style="height: 45%"></div>
+                                            </div>
+                                            <div class="progress-bar pr" id="bar3">
+                                                <div class="progress a" style="height: 65%"></div>
+                                            </div>
+                                            
+                                        </div></div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 sidebar">
+
+                <div class="row">
+                    <div class="col-2"><img src="diamond.jpg" style="width: 50px; height: 50px; display: block; margin: auto; border-radius: 10px;"></div>
+                    <div class="col-2"><img src="diamond.jpg" style="width: 50px; height: 50px; display: block; margin: auto; border-radius: 10px;"></div>
+                    <div class="col-4"><img src="diamond.jpg" style="width: 60px; height: 60px; display: block; margin: auto; border-radius: 10px;"></div>
+                    <div class="col-2"><img src="diamond.jpg" style="width: 50px; height: 50px; display: block; margin: auto; border-radius: 10px;"></div>
+                    <div class="col-2"><img src="diamond.jpg" style="width: 50px; height: 50px; display: block; margin: auto; border-radius: 10px;"></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="mb-3 col-12">
+
+                        <div style="margin-top: 20px;"><h4>Daily Stats</h4></div>
+                        <div style="height: 200px; background: blueviolet; border-radius: 10px;">
+
+                            <div class="progress-bar-container">
+            
+                                <div class="progress-bar pr" id="bar1" style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 0%; background-color: blueviolet;"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar2"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 70%"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar3"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 90%"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar4"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 80%; background-color: rgb(243, 119, 70);"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar3"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 60%"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar3"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 50%"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar2"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 65%"></div>
+                                </div>
+                                <div class="progress-bar pr" id="bar3"  style="background-color: blueviolet;">
+                                    <div class="progress a" style="height: 85%"></div>
+                                </div>
+                                
+                            </div>
+                            
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-12"><div><h4>Fox bestseller</h4></div></div>
+
+                      
+                        <div class="row mt-2" style="margin-top: 30px; margin-bottom: 30px;" >
+                        <div class="col-3"><img src="fox.jpg" style="width: 50px; height: 50px;"></div>
+
+                        <div class="col-9">
+                            <div><b>Blue Donut</b></div>
+                            <small style="color: #ccc;">Study the highway types</small>
+                        </div></div>
+
+                        <div class="row mt-2"  style="margin-top: 30px; margin-bottom: 30px;">
+                        <div class="col-3"><img src="fox.jpg" style="width: 50px; height: 50px;"></div>
+    
+                        <div class="col-9">
+                            <div><b>Blue Donut</b></div>
+                            <small style="color: #ccc;">Study the highway types</small>
+                        </div></div>
+
+                        <div class="row mt-2"  style="margin-top: 30px; margin-bottom: 30px;" >
+                        <div class="col-3"><img src="fox.jpg" style="width: 50px; height: 50px;"></div>
+    
+                        <div class="col-9">
+                            <div><b>Blue Donut</b></div>
+                            <small style="color: #ccc;">Study the highway types</small>
+                        </div></div>
+
+                        <div class="row mt-2"  style="margin-top: 30px; margin-bottom: 30px;">
+                        <div class="col-3"><img src="fox.jpg" style="width: 50px; height: 50px;"></div>
+        
+                        <div class="col-9">
+                            <div><b>Blue Donut</b></div>
+                            <small style="color: #ccc;">Study the highway types</small>
+                        </div></div>
+                        
+                    
+
+                    
+                    
+
+
+
+                </div>
+            </div>
+        </div>
+    </div></div>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
